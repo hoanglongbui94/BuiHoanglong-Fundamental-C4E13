@@ -1,5 +1,5 @@
 from mlab import mlab_connect
-from models.sevice import service
+from models.service import service
 
 
 mlab_connect()

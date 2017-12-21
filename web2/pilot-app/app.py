@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from models.sevice import service
+from models.service import service
 
 from mlab import mlab_connect
 
