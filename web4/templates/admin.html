@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> admin </h1>
+    <table  border = "1px">
+  <thead>
+    <th> Tên </th>
+    <th> Năm sinh </th>
+    <th> CHiều cao </th>
+    <th> Trạng thái </th>
+    <th> Giới tính </th>
+  </thead>
+  <tbody>
+    {% for service in services %}
+    <tr>
+      <td> {{service.Name}} </td>
+      <td> {{service.YOB}} </td>
+      <td> {{service.height}}  </td>
+      <td> {%if service.occupied == True%}
+        Bận
+        {%else%}
+        Rảnh
+        {%endif%}
+
+       </td>
+      <td>
+        {%if service.gender ==0%}
+        Nữ
+        {%else %}
+        Nam
+        {%endif%}
+             </td>
+       <td>
+         <a href=""> Sửa</a>
+         <a href="{{url_for('delete', service_id = service.id)}}"> Xóa </a>
+             </td>
+
+
+    </tr>
+  {%  endfor %}
+</tbody>
+</table>
+
+  </body>
+</html>
