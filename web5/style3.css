@@ -1,0 +1,42 @@
+.containers{
+  width: 100%;
+  height: 300px;
+}
+.img-center{
+  display: block;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex li{
+  list-style:none;
+  display: inline-block;
+}
+.flex li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+.text-center{
+    justify-content: space-around;
+}
+.w-50percent{
+  width: 50%;
+}
+.div-menu{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border:1px solid lightgreen;
+  border-width:1px 0 3px;
+}
+.font-li{
+  font-family: arial;
+}
+.font-bold {font-weight: bold}
+.fontsize {font-size: 30px}
+.justify-content-center {justify-content: center;}
+.text-align {text-align: center}
